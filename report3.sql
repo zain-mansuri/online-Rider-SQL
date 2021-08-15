@@ -1,0 +1,2 @@
+-- Report 3. Weekly revenue for the company including tax 
+select SUM(total_amount) AS Company_Revenue from `onlineride`.`payout` t1 where t1.date_created between CAST('2021-08-14' AS DATE) and CAST('2021-08-20' AS DATE);
